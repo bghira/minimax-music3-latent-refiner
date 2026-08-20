@@ -209,6 +209,14 @@ The holdout degradation was deterministic. No training audio is distributed in t
 - Exact output depends on the MiniMax Music 3 DAV encoder geometry and the provided normalization tensors.
 - Strong corruption outside the training chain can remove information the model cannot reconstruct.
 
+## Related MiniMax Music 3 work
+
+- [SimpleTuner MiniMax Music 3 quickstart](https://github.com/bghira/SimpleTuner/blob/main/documentation/quickstart/MINIMAX_MUSIC.md)
+- [Open RVQ encoders](https://huggingface.co/SimpleTuner/open-rvq-encoder-minimax-music3)
+- [RVQ reference-audio integration](https://github.com/bghira/minimax-music3-rvq-reference-audio)
+- [Fiona Crapple LM LoRA](https://huggingface.co/terminusresearch/minimax-music3-lm-lora-fiona-crapple)
+- [Latent replanner](https://github.com/bghira/minimax-music3-latent-replanner) and [experiment log](https://huggingface.co/terminusresearch/minimax-music3-replanner-experiment)
+
 ## Licenses
 
 Repository code is Apache-2.0.
