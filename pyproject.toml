@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minimax-music3-latent-refiner"
+version = "0.10.0"
+description = "Bridge latent refiner for MiniMax Music 3 audio"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+authors = [{name = "Terminus Research"}]
+dependencies = [
+  "accelerate>=1.8.0",
+  "diffusers>=0.38.0",
+  "huggingface-hub>=0.34.0",
+  "numpy>=1.26",
+  "safetensors>=0.5.0",
+  "soundfile>=0.12.1",
+  "torch>=2.5.0",
+  "torchaudio>=2.5.0",
+  "transformers>=4.52.0",
+]
+
+[project.optional-dependencies]
+dev = ["ruff>=0.12.0"]
+
+[project.scripts]
+minimax-music3-refine = "minimax_music3_latent_refiner.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"

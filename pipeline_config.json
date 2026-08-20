@@ -1,0 +1,12 @@
+{
+  "audio_sample_rate": 44100,
+  "audio_vae": "SimpleTuner/MiniMax-Music-3-Encoder",
+  "bridge_steps": 32,
+  "checkpoint_step": 1000,
+  "clap": "laion/larger_clap_music",
+  "dav_hop": 512,
+  "mert": "m-a-p/MERT-v1-95M",
+  "normalization": "normalization.safetensors",
+  "release": "v0.10",
+  "training_window_seconds": 30.0
+}

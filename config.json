@@ -1,0 +1,13 @@
+{
+  "_class_name": "MiniMaxMusic3LatentRefiner",
+  "_diffusers_version": "0.38.0",
+  "cond_dim": 768,
+  "d_model": 768,
+  "depth": 12,
+  "heads": 12,
+  "latent_dim": 128,
+  "mert_input_layer": 7,
+  "mert_layer_count": 13,
+  "style_dim": 512,
+  "task_count": 3
+}
